@@ -1,4 +1,3 @@
-
 public class Paciente {
 	
 	private double altura = 0;
@@ -14,6 +13,8 @@ public class Paciente {
 		double indiceMassaCorporal = 0;
 		
 		indiceMassaCorporal = this.peso / Math.pow(this.altura, 2);
+		
+		indiceMassaCorporal = Math.round(indiceMassaCorporal*100.0) / 100.0;
 		
 		return indiceMassaCorporal;
 		
